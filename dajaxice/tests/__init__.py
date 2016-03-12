@@ -25,7 +25,7 @@ class DajaxiceModuleTest(TestCase):
 
         self.module.add('foo.bar', function)
         self.assertEqual(self.module.functions, {'test': function})
-        self.assertEqual(self.module.submodules.keys(), ['foo'])
+        self.assertEqual(list(self.module.submodules.keys()), ['foo'])
         self.assertEqual(self.module.submodules['foo'].functions, {'bar': function})
 
 
@@ -91,7 +91,7 @@ class DajaxiceTest(TestCase):
         self.dajaxice.register(self.function, 'bar')
 
         self.assertEqual(type(self.dajaxice.modules), DajaxiceModule)
-        self.assertEqual(self.dajaxice.modules.functions.keys(), ['foo', 'bar'])
+        self.assertEqual(list(self.dajaxice.modules.functions.keys()), ['foo', 'bar'])
 
 
 class DajaxiceConfigTest(TestCase):
