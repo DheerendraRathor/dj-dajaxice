@@ -41,7 +41,7 @@ class DajaxiceRequest(View):
             # Clean the argv
             if data != 'undefined':
                 try:
-                    data = safe_dict(json.loads(data))
+                    data = json.loads(data)
                 except Exception:
                     data = {}
             else:
@@ -49,6 +49,7 @@ class DajaxiceRequest(View):
 
             # Call the function. If something goes wrong, handle the Exception
             try:
+
                 response = function.call(request, **data)
             except Exception:
                 if settings.DEBUG:

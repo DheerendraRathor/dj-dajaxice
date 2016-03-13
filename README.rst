@@ -22,7 +22,7 @@ From ``v0.6`` this project is not going to accept new features. In order to not 
 
 
 Should I use django-dajaxice?
-------------------------------
+-----------------------------
 In a word, No. I created this project 4 years ago as a cool tool in order to solve one specific problem I had at that time.
 
 These days using this project is a bad idea.

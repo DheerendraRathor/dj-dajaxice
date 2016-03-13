@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='dj-dajaxice',
-    version='0.8.2',
+    version='1.0',
     author='Dheerendra Rathor',
     author_email='dheeru.rathor14@gmail.com',
     description='Agnostic and easy to use ajax library for django',
@@ -29,11 +29,11 @@ setup(
         'Django>=1.8'
     ],
     classifiers=['Development Status :: 4 - Beta',
-                'Environment :: Web Environment',
-                'Framework :: Django',
-                'Intended Audience :: Developers',
-                'License :: OSI Approved :: BSD License',
-                'Operating System :: OS Independent',
-                'Programming Language :: Python',
-                'Topic :: Utilities']
+                 'Environment :: Web Environment',
+                 'Framework :: Django',
+                 'Intended Audience :: Developers',
+                 'License :: OSI Approved :: BSD License',
+                 'Operating System :: OS Independent',
+                 'Programming Language :: Python',
+                 'Topic :: Utilities']
 )
